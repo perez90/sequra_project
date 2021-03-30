@@ -1,0 +1,20 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: db
+  username: postgres
+  password: password
+  pool: 5
+
+development:
+  <<: *default
+  database: sequra_project_development
+
+
+test:
+  <<: *default
+  database: sequra_project_test
+
+production:
+  <<: *default
+  database: sequra_project_production
