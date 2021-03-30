@@ -4,4 +4,5 @@ class Merchant < ApplicationRecord
   validates :cif, presence: true, uniqueness: true
 
   has_many :orders
+  has_many :disbursements, dependent: :destroy
 end
