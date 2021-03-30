@@ -21,4 +21,7 @@ RSpec.describe Shopper, type: :model do
       end
     end
   end
+  describe 'associations' do
+    it { should have_many(:orders) }
+  end
 end
