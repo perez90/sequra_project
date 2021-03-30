@@ -41,7 +41,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails', '~> 3.9'
   gem 'rubocop', require: false
-  gem 'shoulda-matchers', '~> 4.0'
+  gem 'shoulda-matchers'
 end
 
 group :development do
