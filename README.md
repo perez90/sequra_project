@@ -74,8 +74,8 @@ ID | MERCHANT ID | SHOPPER ID | AMOUNT | CREATED AT           | COMPLETED AT
 From `Docker version 20.10.5`  execute:
 
 ```shell
-git clone https://github.com/perez90/myapp.git myapp
-cd myapp
+git clone https://github.com/perez90/sequra_project.git myapp
+cd sequra_project
 docker-compose up -d
 docker-compose run web rake db:setup db:migrate db:seed
 docker-compose run web rake calculate_disbursements:all_merchant
