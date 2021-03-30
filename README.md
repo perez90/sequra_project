@@ -123,6 +123,7 @@ And through the endpoint, we can obtain how much money should be disbursed to ea
 
  - More and better tests.
  - Config "Whenever Gem" (i had errors to execute the schedule.rb)
+ - Think more improvements (API auth.., end point to add new merchants..)
 
 ## Comments
  - I think it can be a challenge for more than 3-4 hours.
