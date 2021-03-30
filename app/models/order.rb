@@ -11,15 +11,15 @@ class Order < ApplicationRecord
   PERCENTAGE_FEE_SECOND = 0.0095
   PERCENTAGE_FEE_THIRD = 0.0085
 
-  scope :completed, ->() {where.not(completed_at: nil)}
+  scope :completed, -> { where.not(completed_at: nil) }
 
   def calculated_amount
-    if self.amount < 50
-      self.amount * (1 - PERCENTAGE_FEE_FIRST)
-    elsif self.amount > 50 && self.amount < 300
-      self.amount * (1 - PERCENTAGE_FEE_SECOND)
-    elsif self.amount > 300
-      self.amount * (1 - PERCENTAGE_FEE_THIRD)
+    if amount < 50
+      amount * (1 - PERCENTAGE_FEE_FIRST)
+    elsif amount > 50 && amount < 300
+      amount * (1 - PERCENTAGE_FEE_SECOND)
+    elsif amount > 300
+      amount * (1 - PERCENTAGE_FEE_THIRD)
     end
   end
 end

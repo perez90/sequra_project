@@ -10,4 +10,4 @@ RSpec.describe Order, type: :model do
     it { should belong_to(:shopper) }
     it { should belong_to(:disbursement) }
   end
-end 
+end
